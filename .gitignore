@@ -1,0 +1,9 @@
+bower_components
+node_modules
+npm-debug.log
+release/*
+bookingbug-angular
+.awspublish*
+setup_aws.cmd
+examples/development_config.json
+examples/release
