@@ -4,23 +4,23 @@
 @import "fonts";
 
 // Modules & Variables
-$heading-text-color         : #000000;
-$page-background-color      : #FFFFFF;
-$hyperlink-color            : #609ABE; 
-$placeholder-text           : #A5A5A5; 
+$heading-text-color         : #fff;
+$page-background-color      : #111;
+$hyperlink-color            : #ffcc28;
+$placeholder-text           : #A5A5A5;
 
-$primary-text-color         : #000000; 
-$primary-background-color   : #EEEEEE; 
+$primary-text-color         : #fff;
+$primary-background-color   : #111;
 $primary-border-color       : #666666;
 
-$secondary-text-color       : #255B93;
-$secondary-background-color : #FAFAFA; 
-$secondary-border-color     : #D5D5D5; 
+$secondary-text-color       : #fff;
+$secondary-background-color : #111;
+$secondary-border-color     : #D5D5D5;
 
 #bb {
 
   // font-family: 'Source Sans Pro', sans-serif;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ExpertSansLight, Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: $font-size-base;
   color: $primary-text-color;
@@ -28,7 +28,7 @@ $secondary-border-color     : #D5D5D5;
   margin: 0; // remove default body margin
 
   // Theme
-  @import "bb_light_theme";
+  @import "bb_dark_theme";
 
   // Page Elements
   @import "buttons";
@@ -56,3 +56,8 @@ $secondary-border-color     : #D5D5D5;
   @import "time";
   @import "filters";
 }
+
+#document {
+  background:red;
+}
+

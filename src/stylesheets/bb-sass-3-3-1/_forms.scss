@@ -155,6 +155,9 @@ textarea.form-control {
   height: auto;
 }
 
+label.bb-label-width.control-label {
+  color:#fff!important;
+}
 
 // Search inputs in iOS
 //
@@ -428,6 +431,7 @@ input[type="checkbox"] {
   // labels on narrow viewports stack the same as a default form example.
   @media (min-width: $screen-sm-min) {
     .control-label {
+      color: #fff!important;
       text-align: right;
       margin-bottom: 0;
       padding-top: ($padding-base-vertical + 1); // Default padding plus a border
@@ -522,6 +526,7 @@ input[type="checkbox"] {
     }
 
     .control-label {
+      color: #fff!important;
       margin-bottom: 0;
       vertical-align: middle;
     }
@@ -559,4 +564,9 @@ input[type="checkbox"] {
   @include form-inline;
 }
 
+}
+
+
+label.bb-label-width.control-label {
+  color: #fff!important;
 }

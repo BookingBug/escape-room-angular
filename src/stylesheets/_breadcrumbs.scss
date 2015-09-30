@@ -6,8 +6,9 @@
   li {
     @include make-xs-column(2);
     button {
-      color: #fff;
-      border: 1px solid #fff;
+      color: red;
+      background-color: #000!important;
+      border: 0px solid #fff;
       font-size: 12px;
       background-color: transparent;
       width: 100%;
@@ -26,6 +27,11 @@
       background-color: #383838;
       border-color: #383838;
     }
+    button.disabled {
+         background-color: #383838;
+      border-color: #383838;
+    }
+
   }
   > li + li:before {
     content: none;

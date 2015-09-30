@@ -23,6 +23,7 @@
 }
 
 .control-label {
+  color:#fff!important;
   font-size: $font-size-base;
   padding-right: 0;
   font-weight: normal;
@@ -67,7 +68,7 @@
     font-style: normal;
     font-weight: normal;
     line-height: 1;
-    -webkit-font-smoothing: antialiased;    
+    -webkit-font-smoothing: antialiased;
     content:"\e107";
   }
 }

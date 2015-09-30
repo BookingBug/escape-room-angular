@@ -22,7 +22,8 @@
 						<tr ng-repeat="item in items" ng-class="{'last-item': $last}">
 							<td>
 								<p>
-									{{item.describe()}}
+									<!--{{item.describe()}} -->
+							<!--	§ER: use this as workaround if basket does not pickup correct amount			<div bb-include="_service_item_aggregate"> -->
 									<br/>
 									<small>{{item.date.date | datetime: "h:mma dddd Do MMMM":false}}</small>
 									<br/>
@@ -33,8 +34,8 @@
 								<p></p>
 							</td>
 							<td class="text-right">
-								{{ item.total_price | currency }}
-								<div ng-if="item.certificate_paid > 0">
+							{{ item.total_price | currency }} 
+							<div ng-if="item.certificate_paid > 0">
 									<small>Certificate Paid: {{ item.certificate_paid | currency }}</small>
 								</div>
 							</td>
@@ -98,6 +99,7 @@
 							<th class="text-right">Total</th>
 							<th class="text-right">{{basket.total_price | currency }}</th>
 							<th>&nbsp;</th>
+							
 						</tr>
 						<tr data-ng-if="basket.total_due_price != basket.total_price">
 							<th class="text-right">Total Due Now</th>
@@ -138,9 +140,9 @@
 			<div class="bb-step-navigation">
 				<div class="row">
 					<div class="col-sm-9 col-sm-push-3 text-right">
-						<div ng-if="bb.company.$has('events')">
+						<!-- disable this for §ER div ng-if="bb.company.$has('events')">
 							<button type="button" class="btn btn-primary" ng-click="addAnother('event_list')">Add another item</button>
-						</div>
+						</div -->
 						<div ng-if="bb.company.$has('services')">
 							<button type="button" class="btn btn-primary" ng-click="addAnother('service_list')">Add another item</button>
 						</div>

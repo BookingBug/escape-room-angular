@@ -1,3 +1,7 @@
+.calendar {
+border-top: 0px solid #999;
+padding-top:20px;
+}
 .calendar, div[bb-time-ranges],  {
   padding-bottom: 50px;
 
@@ -69,7 +73,7 @@
     .panel {
       border-radius: 0;
       margin: 0;
-      border: none;  
+      border: none;
       border-bottom: 1px rgb(221, 221, 221) solid;
       box-shadow: none;
     }
@@ -81,7 +85,7 @@
 
   .panel-default > .panel-heading {
     background: none;
-    padding: 15px;
+    padding: 15px 5px;
     position: relative;
     cursor: pointer;
     color: inherit;
@@ -99,28 +103,29 @@
   }
 
    .panel-body {
-    padding: 0;
+    padding: 5px;
   }
 
   .panel-title {
     font-size: inherit;
+    padding:0px;
   }
 
   .period-label {
     display: block;
     text-transform: uppercase;
     margin-bottom: 10px;
-    font-size: $font-size-small; 
+    font-size: $font-size-small;
     // font-size: 0.9rem;
   }
 
   // .selected-time {
-  //   font-size: 12px; 
+  //   font-size: 12px;
   //   font-size: 1.2rem;
   // }
 
   .time-slot {
-    padding: 15px 25px;
+    padding:5px;
     cursor: pointer;
     text-align: center;
     &:hover, &.selected {
@@ -131,7 +136,8 @@
 
   // expanded or selected panel
   .panel-group .panel.expanded {
-    background-color: #EEE;
+    background-color:#ffcc28;
+    color: #111;
   }
 
   .panel-group .panel.selected {
@@ -140,8 +146,8 @@
   }
 
   .panel-default.expanded > .panel-heading {
-    padding-bottom: 5px;
-  } 
+    padding-bottom: 0;
+  }
 
   // disabled panel
   .panel-default[disabled], .panel[disabled].expanded {
