@@ -73,7 +73,14 @@
               </div>
             </li>
           </ul>
-          <div ng-if="total.$has('new_payment')" class="col-sm-12 bb-checkout-pay-button-div">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" ng-model="total.tandcs">
+              Do you agree to the Terms &amp; Conditions?
+            </label>
+          </div>
+          <div ng-if="total.$has('new_payment')" ng-show="total.tandcs"
+            class="col-sm-12 bb-checkout-pay-button-div">
             <div bb-payment-button 
               value="Pay" 
               class="btn btn-primary" 
