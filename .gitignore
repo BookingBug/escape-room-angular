@@ -7,3 +7,4 @@ bookingbug-angular
 setup_aws.cmd
 examples/development_config.json
 examples/release
+.DS_Store
