@@ -33,9 +33,13 @@
               <div class="col-sm-3">Description:</div>
               <div class="col-sm-9">{{i.description}}</div>
             </li>
-            <li ng-if="i.full_describe" class="row confirmation-summary-item">
-              <div class="col-sm-3">Service:</div>
-              <div class="col-sm-9">{{i.full_describe}}</div>
+            <li class="row confirmation-summary-item" ng-if="i.service_name">
+              <div class="col-sm-3">Players:</div>
+              <div class="col-sm-9"><span>{{i.service_name}}</span></div>
+            </li>
+            <li class="row confirmation-summary-item" ng-if="i.resource_name">
+              <div class="col-sm-3">Room:</div>
+              <div class="col-sm-9"><span>{{i.resource_name}}</span></div>
             </li>
             <li ng-if="i.describe" class="row confirmation-summary-item">
               <div class="col-sm-3">Date/Time:</div>
