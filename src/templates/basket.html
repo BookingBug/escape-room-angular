@@ -22,7 +22,9 @@
 						<tr ng-repeat="item in items" ng-class="{'last-item': $last}">
 							<td>
 								<p>
-									<!--{{item.describe()}} -->
+									{{item.describe()}}
+                  <br/>
+                  {{item.resource_name}}
 							<!--	§ER: use this as workaround if basket does not pickup correct amount			<div bb-include="_service_item_aggregate"> -->
 									<br/>
                   <small>{{item.time.time_12}} {{item.date.date | datetime: "dddd Do MMMM":false}}</small>
